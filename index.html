@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vol Motorsports</title>
+</head>
+<body id="top">
+    <header>
+        <h1>Vol Motorsports</h1>
+        <nav aria-label="Main navigation">
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h2><span class="orange-word">Vol</span> Motorsports</h2>
+        </section>
+
+        <section class="about" id="about">
+            <p class="eyebrow">About Us</p>
+            <h3>Built by students. Run by students.</h3>
+            <p>Vol Motorsports is a student-led Formula SAE team focused on designing, manufacturing, and testing a high-performance race vehicle.</p>
+            <p>Our members work across engineering disciplines including chassis design, aerodynamics, powertrain, manufacturing, and testing. Every season, we build on the lessons from the previous car to improve performance, reliability, and the learning experience for the next generation of engineers.</p>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="gallery-header">
+                <p class="eyebrow">Gallery</p>
+                <h3 id="gallery-title">Vehicle assembly</h3>
+            </div>
+
+            <div class="carousel" aria-label="Team photo gallery">
+                <div class="slide active" data-title="Vehicle assembly">
+                    <div class="slide-image image-one"></div>
+                    <button type="button" class="gallery-btn prev" data-direction="prev" aria-label="Previous image">&#10094;</button>
+                    <button type="button" class="gallery-btn next" data-direction="next" aria-label="Next image">&#10095;</button>
+                </div>
+                <div class="slide" data-title="Track testing">
+                    <div class="slide-image image-two"></div>
+                    <button type="button" class="gallery-btn prev" data-direction="prev" aria-label="Previous image">&#10094;</button>
+                    <button type="button" class="gallery-btn next" data-direction="next" aria-label="Next image">&#10095;</button>
+                </div>
+                <div class="slide" data-title="Design review">
+                    <div class="slide-image image-three"></div>
+                    <button type="button" class="gallery-btn prev" data-direction="prev" aria-label="Previous image">&#10094;</button>
+                    <button type="button" class="gallery-btn next" data-direction="next" aria-label="Next image">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h3>Partner with Vol Motorsports</h3>
+                    <p>We are always looking for sponsors, mentors, and industry partners who want to support the next generation of engineers.</p>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <label>
+                        Name
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                    </label>
+
+                    <label>
+                        Company
+                        <input type="text" name="company" placeholder="Company or organization">
+                    </label>
+
+                    <label>
+                        Message
+                        <textarea name="message" rows="5" placeholder="Tell us about your interest in sponsoring our team" required></textarea>
+                    </label>
+
+                    <button type="submit">Send inquiry</button>
+                    <p class="contact-status" id="contact-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
